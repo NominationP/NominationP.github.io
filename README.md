@@ -1,7 +1,7 @@
-Hux Blog
+Yibo Blog
 ========
 
-### [View alive Hux Blog &rarr;](https://huangxuan.me)  
+### [View alive Yibo Blog &rarr;](https://huangxuan.me)  
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
@@ -161,8 +161,8 @@ You can easily customize the blog by modifying `_config.yml`:
 
 ```yml
 # Site settings
-title: Hux Blog             # title of your website
-SEOTitle: Hux Blog          # check out docs for more detail
+title: Yibo Blog             # title of your website
+SEOTitle: Yibo Blog          # check out docs for more detail
 description: "Cool Blog"    # ...
 
 # SNS settings      
@@ -333,7 +333,7 @@ In technical views, it can be done with CSS. However, the opacity of the black o
 ### SEO Title
 
 Before V1.4, site setting `title` is not only used for displayed in Home Page and Navbar, but also used to generate the `<title>` in HTML.
-It's possible that you want the two things different. For me, my site-title is **“Hux Blog”** but I want the title shows in search engine is **“黄玄的博客 | Hux Blog”** which is multi-language.
+It's possible that you want the two things different. For me, my site-title is **“Yibo Blog”** but I want the title shows in search engine is **“黄玄的博客 | Yibo Blog”** which is multi-language.
 
 So, the SEO Title is introduced to solve this problem, you can set `SEOTitle` different from `title`, and it would be only used to generate HTML `<title>` and setting DuoShuo Sharing.
 
@@ -385,5 +385,5 @@ License
 Apache License 2.0.
 Copyright (c) 2015-2020 Huxpro
 
-Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
+Yibo Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
 Copyright (c) 2013-2016 Blackrock Digital LLC.
