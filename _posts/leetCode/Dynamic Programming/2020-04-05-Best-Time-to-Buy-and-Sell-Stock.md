@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Best Time to Buy and Sell Stock"
+title: "Leetcode - Best Time to Buy and Sell Stock"
 subtitle: ''
 author: "Yibo"
 header-img: "img/in-post/2020-04/stock-cover1.webp"
