@@ -4,29 +4,16 @@ description: "我干了什么 究竟拿了时间换了什么"
 ---
 
 {% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
+      <div class="archive item">
+        <article class="archive-item">
+            <a href="{{ post.url | prepend: site.baseurl }}"
+             class="archive-item-link">
+             {{ post.title }}
+            </a>
+            <span class="archive-item-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </article>
+    </div>
+
 {% endfor %}
 
 <!-- Pager -->
