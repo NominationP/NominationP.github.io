@@ -5,7 +5,9 @@ subtitle: ''
 author: "YiBo"
 header-style: text
 tags:
-  - spring ioc aop
+  - Spring
+  - IOC
+  - AOP
 ---
 
 ## 1. 前记
@@ -50,11 +52,6 @@ java的代理模式
 
 IOC  （v1）
 ![image-20201010113811745](/img/in-post/2020-10/image-20201010113811745.png)
-![image-20201010113811745](./image-20201010113811745.png)
-![](/img/in-post/2020-04/122_maxprofit_1.PNG)
-
-
-
 
 
 AOP
