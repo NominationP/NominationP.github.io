@@ -39,6 +39,8 @@ tags:
 
 > **?????????????????????????? 这三个结果后续是怎么处理的**
 
+> !!!!!!!!!!!!!!!!!!!!!!!! 通过 `getObjectForBeanInstance()` 完整的bean直接返回，不完整的bean还要经过处理:`factory.getObject()`
+
 **上述流程表示：`getSingleton(beanName)`中返回三种结果： 完整的bean，不完整的bean，null**
 
 上面用到的三个缓存集合：
@@ -98,7 +100,7 @@ System.out.println("hello-child -> " + applicationContext.getBean("hello-child")
 >
 > 在我看来，这个方法唯一有效的动作就是 factory.getObject() 调用工厂方法生成bean实例，就是把之前生成不完整的bean完整了？剩下就是一些判断
 
-
+> !!!!!!!!!!!!! 通过 `factory.getOjbect()` 将不完整的bean完整了
 
 ![image-20201022160211427](/img/in-post/2020-10/image-20201022160211427.png)
 
