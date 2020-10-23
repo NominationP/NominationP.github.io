@@ -104,11 +104,11 @@ Loopkuo-method 和 replace-method 是用户自行配置对bean增强的方式，
 
 ####  2.2.3 调用 doCreateBean 方法创建 bean
 
-![image-20201023172513174](////Library/Application Support/typora-user-images/image-20201023172513174.png)
+![image-20201023172513174](/img/in-post/2020-10/image-20201023172513174.png)
 
 ![image-20201023172056529](/img/in-post/2020-10/image-20201023172056529.png)
 
-![image-20201023172418479](////Library/Application Support/typora-user-images/image-20201023172418479.png)
+![image-20201023172418479](/img/in-post/2020-10/image-20201023172418479.png)
 
 1. 从缓存中获取 BeanWrapper 实现类对象，并清理相关记录
 2. 若未命中缓存，则创建 bean 实例，并将实例包裹在 BeanWrapper 实现类对象中返回
