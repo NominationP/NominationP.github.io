@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring IOC 容器源码分析（二） - 创建单例 bean 的过程"
+title: "Spring IOC 容器源码分析（二）- 创建单例 bean 的过程"
 subtitle: ''
 author: "YiBo"
 header-style: text
@@ -108,7 +108,7 @@ Loopkuo-method 和 replace-method 是用户自行配置对bean增强的方式，
 
 ![image-20201023172056529](/img/in-post/2020-10/image-20201023172056529.png)
 
-![image-20201023172418479](/img/in-post/2020-10/image-20201023172418479.png)
+![image-20201023175653490](/img/in-post/2020-10/image-20201023175653490.png)
 
 1. 从缓存中获取 BeanWrapper 实现类对象，并清理相关记录
 2. 若未命中缓存，则创建 bean 实例，并将实例包裹在 BeanWrapper 实现类对象中返回
