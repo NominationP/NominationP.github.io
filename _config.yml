@@ -68,11 +68,11 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: 'd0d03b6381a690569f4b61f5c5df03fb'
 
 # Google Analytics
-ga_track_id: 'UA-162128886-1'            # Format: UA-xxxxxx-xx
-ga_domain: nominationp.github.io
+# ga_track_id: 'UA-162128886-1'            # Format: UA-xxxxxx-xx
+# ga_domain: nominationp.github.io
 
 
 
