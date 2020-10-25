@@ -144,7 +144,7 @@ Loopkuo-method 和 replace-method 是用户自行配置对bean增强的方式，
 
 1. `先从缓存中获取，如果没有先标记正在创建，然后调用getObject()—>createBean()`
 2. `createBean(): 解析bean的类型，校验是否重载方法，初始化前置后置，最后核心方法doCreateBean()`
-3. BeanWrapper
+3. BeanWrapper `createBeanInstance()`
 4. `合并的BeanDefinition后置处理逻辑` ？？？ 虽然写出来了，但不懂
 5. `放入singletonFactory 解决循环依赖`
 6. 填充属性
@@ -152,6 +152,7 @@ Loopkuo-method 和 replace-method 是用户自行配置对bean增强的方式，
 8. `又干了一堆不懂的逻辑`
 9. 销毁注册逻辑（应该是清除一些缓存）
 10. 返回
+11. 将完整bean放入 `addSingleton` (本文没有此步骤，在函数之外) 
 
 黑色的流程是我的直觉反应，如果看完这篇文章还不能多出几个，那就白看了，标记的是回顾文章加的
 
