@@ -7,6 +7,7 @@ header-style: text
 tags:
   - Spring
   - IOC
+typora-root-url: ../../../yibo.github.io
 ---
 
 ## 1. 前记

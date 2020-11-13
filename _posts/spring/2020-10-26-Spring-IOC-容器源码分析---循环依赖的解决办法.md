@@ -43,7 +43,7 @@ typora-root-url: ../../../yibo.github.io
 
 1. 发现 a -> b ，去实例化b
 2. 发现 b->a 容器会获取 a 对象的一个早期引用（early reference） 引入注入到 b 中，让 b 完成实例化
-3. a 就可以获取到 b 的因哟好难过， 随之完成实例化
+3. a 就可以获取到 b 的beandu对象， 随之完成实例化
 
 ### 2.2 spring中的缓存介绍
 
@@ -65,11 +65,15 @@ typora-root-url: ../../../yibo.github.io
 
 ![image-20201025152848204](/img/in-post/2020-10/image-20201025152848204.png)
 
-这里我把大佬的图之间拿过来了
+这里我把大佬的图直接拿过来了
 
 下面是这张图的解释，我觉得很不错，基本就把前几篇的过程总结了一下，看看就能回顾
 
-![image-20201025153218942](/../../../../../../Library/Application Support/typora-user-images/image-20201025153218942.png)
+
+
+
+
+![image-20201025153218942](/img/in-post/2020-10/image-20201025153218942.png)
 
 简化后
 

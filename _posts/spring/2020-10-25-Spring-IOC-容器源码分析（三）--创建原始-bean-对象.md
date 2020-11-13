@@ -111,7 +111,6 @@ typora-root-url: ../../../yibo.github.io
 
 ok，面试题： 构造bean对象的三种方式，以及俩种策略
 
-
 -------------
 
 **附录**

@@ -33,7 +33,7 @@ date: 2020-10-27
 
 ### 2.1 populateBean 源码一览
 
-![image-20201025165937498](/img/in-post/2020-10/image-20201025165937498.png)
+<img src="/img/in-post/2020-10/image-20201025165937498.png" alt="image-20201025165937498" style="zoom:100%;" />
 
 ![image-20201025170100259](/img/in-post/2020-10/image-20201025170100259.png)
 

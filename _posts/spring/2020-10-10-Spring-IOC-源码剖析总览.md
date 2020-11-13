@@ -7,6 +7,8 @@ header-style: text
 tags:
   - Spring
   - IOC
+  - 自问自答
+typora-root-url: ../../../yibo.github.io
 ---
 
 ## 1. 前记
@@ -17,7 +19,36 @@ tags:
 
 我写这个模块的初衷就是：让自己懂Spring IOC,懂到不惧怕面试官对于这方面的任何问题，我会列一系列问题，如果都明白，那么目的就达成了
 
-- 
+### **「自问自答」环节**
+
+- 谈谈对spring中bean的理解
+
+  - bean就是在spring运行最开始，初始化的对象，这些对象（bean）初始化后都放在spring容器中，供用户去随时调用
+
+  - 从调用的角度来说，可以分成：单例（默认），多例
+
+  - 生成bean对象的过程为：
+
+    1. 找：框架默认的bean、注解标识的bean
+
+       先从缓存中 、根据name找、到父容器中找、
+
+    2. 初始化：根据每个bean不同的配置，依赖，一般是根据bean的类名路径，来初始化，如果依赖于其他bean，先初始化其他bean，再填充属性，最后放入容器中
+
+- 循环依赖是什么，怎么解决
+
+  - 在初始化bean的依赖的时候，如发现a->b b->a这种依赖关系，a b 的初始化都需要对方的实例bean才能完成初始化
+  - 解决：[Spring IOC 容器源码分析（四）- 循环依赖的解决办法--总结](https://nominationp.github.io/2020/10/26/Spring-IOC-%E5%AE%B9%E5%99%A8%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/#4-%E6%80%BB%E7%BB%93)
+
+- bean的创建流程
+
+  [Spring IOC 容器源码分析（二）- 创建单例 bean 的过程 -- 总结](https://nominationp.github.io/2020/10/23/Spring-IOC-%E5%AE%B9%E5%99%A8%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E5%88%9B%E5%BB%BA%E5%8D%95%E4%BE%8Bbean%E7%9A%84%E8%BF%87%E7%A8%8B/#3-%E6%80%BB%E7%BB%93)
+
+- 构造bean原始对象的三种方法，俩种策略
+
+  [Spring IOC 容器源码分析（三）- 创建原始 bean 对象--总结](https://nominationp.github.io/2020/10/25/Spring-IOC-%E5%AE%B9%E5%99%A8%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E4%B8%89-%E5%88%9B%E5%BB%BA%E5%8E%9F%E5%A7%8B-bean-%E5%AF%B9%E8%B1%A1/#3-%E6%80%BB%E7%BB%93)
+
+
 
 ## 2. 如何下手
 
@@ -131,3 +162,20 @@ BeanPostProcessor 是 Spring 框架的一个扩展点，通过实现 BeanPostPro
 
 工作一年俩年三年，我都在混沌（第三次出现了。。）中度过，回首往事，没有什么值得去叙说的，写文章应该是个不错的开始
 
+
+
+
+
+-------------
+
+**附录**
+
+| IOC文章列表                                                  |
+| ------------------------------------------------------------ |
+| **[Spring IOC 源码剖析总览](https://nominationp.github.io/2020/10/10/Spring-IOC-源码剖析总览/)** |
+| [Spring IOC 容器源码分析（一）- 获取单例bean](https://nominationp.github.io/2020/10/22/Spring-IOC-获取单例bean/) |
+| [Spring IOC 容器源码分析（二）- 创建单例 bean 的过程](https://nominationp.github.io/2020/10/23/Spring-IOC-容器源码分析-创建单例bean的过程/) |
+| [Spring IOC 容器源码分析（三）- 创建原始 bean 对象](https://nominationp.github.io/2020/10/25/Spring-IOC-容器源码分析-三-创建原始-bean-对象/) |
+| [Spring IOC 容器源码分析（四）- 循环依赖的解决办法](https://nominationp.github.io/2020/10/26/Spring-IOC-容器源码分析-循环依赖的解决办法/) |
+| [Spring IOC 容器源码分析（五） - 填充属性到 bean 原始对象](https://nominationp.github.io/2020/10/27/Spring-IOC-容器源码分析-五-填充属性到-bean-原始对象/) |
+| [Spring IOC 容器源码分析（六）- 余下的初始化工作](https://nominationp.github.io/2020/10/28/Spring-IOC-%E5%AE%B9%E5%99%A8%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E4%BD%99%E4%B8%8B%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B7%A5%E4%BD%9C/) |

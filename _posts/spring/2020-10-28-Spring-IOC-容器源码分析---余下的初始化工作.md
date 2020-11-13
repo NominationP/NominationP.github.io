@@ -8,16 +8,40 @@ tags:
   - Spring
   - IOC
 typora-root-url: ../../../yibo.github.io
-
 ---
 
 
 
+## 1. 前记
+
+这篇文章是这个系列的最后一篇文章，bean填充属性后，进行最后的初始化工作，也就是`initializeBean`
+
+
+
+## 2. 源码分析
+
+![image-20201112102826923](/img/in-post/2020-10/image-20201112102826923.png)
+
+- ![image-20201112103004414](/img/in-post/2020-10/image-20201112103004414.png)
+- ![image-20201112103053750](/img/in-post/2020-10/image-20201112103053750.png)
 
 
 
 
 
+## 3. 总结
+
+这个系列的文章全程摘抄 [Spring IOC 容器源码分析 - 余下的初始化工作](https://www.shuzhiduo.com/A/E35pAl2Ldv/) 这位大佬的文章
+
+断断续续也终于算结束了
+
+虎头蛇尾也不为过了，过了N天细节都忘记了，只记得我搞明白过bean ：）
+
+
+
+如果这样，那我写的有啥意义呢，必须要回顾，进行更深层次的理解
+
+回到 [Spring IOC 源码剖析总览](https://nominationp.github.io/2020/10/10/Spring-IOC-%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90%E6%80%BB%E8%A7%88/) 来看看我列出来的几个问题，能不能 **「自问自答」**
 
 
 
