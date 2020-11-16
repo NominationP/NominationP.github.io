@@ -22,7 +22,7 @@ typora-root-url: ../../../yibo.github.io
 
 ![image-20201112102826923](/img/in-post/2020-10/image-20201112102826923.png)
 
-- ![image-20201112103004414](/img/in-post/2020-10/image-20201112103004414.png)
+- ![image-20201112103004414](/img/in-post/2020-11/image-20201112103004414.png)
 - ![image-20201112103053750](/img/in-post/2020-10/image-20201112103053750.png)
 
 
