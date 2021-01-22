@@ -8,6 +8,7 @@ tags:
   - Spring  
   - 多线程
 typora-root-url: ../../../yibo.github.io
+date: 2020-11-17 12:00
 ---
 
 
@@ -151,7 +152,7 @@ This class provides thread-local variables. These variables differ from their no
 
 这个类提供 thread-local(线程-本地)变量。这些变量不同于普通的变量，在每个线程中访问他自己的变量（通过他的get或者set方法），在每个线程中独立的初始化这个变量。ThreadLocal 实例通常作为一个私有的属性在一个类中，用来关联一个线程中的状态（比如一个用户ID或者是事务ID）
 
-> 自我感觉翻译的还是挺准确的，差不多是直译的，也有进行一些变换，这也是最近学精度的一个强技巧：只看一遍，不回头
+> 自我感觉翻译的还是挺准确的，差不多是直译的，也有进行一些变换，这也是最近学精读的一个强技巧：只看一遍，不回头
 
 ![image-20201117173234905](/img/in-post/2020-11/image-20201117173234905.png)
 

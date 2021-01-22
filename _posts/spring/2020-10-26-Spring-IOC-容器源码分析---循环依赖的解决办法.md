@@ -103,7 +103,7 @@ typora-root-url: ../../../yibo.github.io
 
 1. **创建原始 bean 对象**
 
-   首先通过[Spring-IOC-容器源码分析-三-创建原始-bean-对象]()中的`createBeanInstance`获取原始bean对象，记不起来的话，想想创建bean的3个方式2种策略，通过这个方法，可以创造出一个没有注入参数的提前引用！
+   首先通过[Spring-IOC-容器源码分析-三-创建原始-bean-对象](https://nominationp.github.io/2020/10/25/Spring-IOC-%E5%AE%B9%E5%99%A8%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E4%B8%89-%E5%88%9B%E5%BB%BA%E5%8E%9F%E5%A7%8B-bean-%E5%AF%B9%E8%B1%A1/)中的`createBeanInstance`获取原始bean对象，记不起来的话，想想创建bean的3个方式2种策略，通过这个方法，可以创造出一个没有注入参数的提前引用！
 
    ```java
    instanceWrapper = createBeanInstance(beanName, mbd, args);

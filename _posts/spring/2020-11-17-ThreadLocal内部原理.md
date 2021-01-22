@@ -9,7 +9,7 @@ tags:
   - 多线程
   - 到底是什么
 typora-root-url: ../../../yibo.github.io
-
+date: 2020-11-17 14:00
 ---
 
 ## 1. 前记
@@ -49,19 +49,23 @@ java中 线程 - 栈内存 - 堆内存的关系
 
 
 
+### 2.3 使用 InheritableThreadLocal 共享
+
+可以使用 InheritableThreadLocal 复制父线程的数据
 
 
 
+### 2.4 不会导致内存泄露
+
+ThreadLocalMap 在选择 key 的时候，并不是直接选择ThreadLocal实例，而是ThreadLocal实例的**弱引用**
 
 
 
+### 2.5 使用场景
 
+- 实现线程安全
 
-
-
-
-
-
+  
 
 
 
