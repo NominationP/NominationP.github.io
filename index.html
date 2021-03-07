@@ -1,11 +1,27 @@
 ---
 layout: page
-description: "未来wei来 只争当下"
+description: ""
 ---
 
 {% for post in paginator.posts %}
-      <div class="archive item">
-        <article class="archive-item">
+
+    {% comment %} group by year {% endcomment %}
+            {%- assign _currentdate = post.date | date: '%Y' -%}
+            {%- if _currentdate != _date -%}
+                {%- unless forloop.first -%}</section>{%- endunless -%}
+                
+                <span class="fa listing-seperator">
+                    <h2 class="archive-title">{{ _currentdate }}</>
+                </span>
+                {%- assign _date = _currentdate -%}
+            {%- endif -%}
+
+
+
+
+      <!-- <div class="archive item"> -->
+      <div class="archive">
+        <article class="archive-item-custom">
             <a href="{{ post.url | prepend: site.baseurl }}"
              class="archive-item-link">
              {{ post.title }}

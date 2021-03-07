@@ -1,3 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
 
 h1,
 h2,
@@ -189,16 +202,13 @@ code {
   display: block;
 }
 
-.archive-item-link, .archive-item-link:hover {
+.archive-item-link {
   display: inline-block;
   text-decoration: none;
   font-size: 21px;
   font-weight: bold;
   color: #222;
-  padding: 10px 0;
-}
-
-.archive-item-link {
+  padding: 5px 0;
   border-bottom: 1px solid #ddd;
 }
 

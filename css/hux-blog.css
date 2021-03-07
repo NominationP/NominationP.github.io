@@ -566,12 +566,13 @@ body {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;*/
+  font-family: 'Merriweather', serif;
   line-height: 1.8;
   font-size: 19px;
-  color: #404040;
+  color: #333;
   overflow-x: hidden;
-  text-rendering: auto;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -593,7 +594,8 @@ h6 {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;*/
+  font-family: 'Lato', sans-serif;
   line-height: 1.7;
   line-height: 1.1;
   font-weight: bold;
@@ -737,13 +739,13 @@ samp {
 }
 @media screen and (max-width: 768px) {
   .post-container h1 {
-    font-size: 30px;
+    font-size: 1.5em;
   }
   .post-container h2 {
-    font-size: 22px;
+    font-size: 1.17em;
   }
   .post-container h3 {
-    font-size: 20px;
+    font-size: 19px;
   }
   .post-container h4 {
     font-size: 19px;
@@ -1104,7 +1106,7 @@ samp {
   }
 }
 .intro-header .post-heading h1 {
-  font-size: 30px;
+  font-size: 27px;
   margin-bottom: 24px;
 }
 .intro-header .post-heading .subheading,
@@ -1136,7 +1138,7 @@ samp {
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
-    font-size: 55px;
+    font-size: 42px;
   }
   .intro-header .post-heading .subheading {
     font-size: 30px;
@@ -1691,3 +1693,74 @@ img::-moz-selection {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+
+.archive-title {
+    font-size: 38px;
+    margin-top: 60px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.archive-item-custom {
+    margin: 15px 1;
+    padding: 0;
+}
+
+
+
+
+.archive {
+    text-align: left;
+}
+.archive {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.3em;
+    text-align: center;
+    color: #111;
+}
+
+
+
+.content {
+    font-size: 19px;
+    line-height: 1.8;
+}
+.content {
+    max-width: 700px;
+    margin: 40px auto 10px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+
+
+.archive-item-link {
+    text-overflow: ellipsis;
+    max-width: calc(100% - 120px);
+    white-space: nowrap;
+    overflow: hidden;
+}
+.archive-item-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    color: #222;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
